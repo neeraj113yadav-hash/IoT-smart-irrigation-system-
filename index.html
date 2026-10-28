@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student project website for IoT Smart Irrigation System.">
+  <title>IoT Smart Irrigation System</title>
+  <style>
+    :root { --green:#176b3a; --dark:#123b25; --pale:#eef8f0; --text:#24352b; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--pale); color:var(--text); line-height:1.65; }
+    header { padding:54px 18px 44px; text-align:center; color:white; background:linear-gradient(135deg,#176b3a,#2b9657); }
+    header .tag { display:inline-block; padding:5px 12px; border:1px solid #ffffff80; border-radius:30px; font-size:.9rem; }
+    h1 { font-size:clamp(2rem,5vw,3rem); line-height:1.15; margin:16px auto 12px; max-width:850px; }
+    header p { max-width:650px; margin:0 auto; font-size:1.08rem; }
+    nav { background:var(--dark); padding:12px 10px; text-align:center; position:sticky; top:0; }
+    nav a { color:white; text-decoration:none; display:inline-block; padding:6px 10px; font-size:.95rem; }
+    main { width:min(920px,92%); margin:24px auto 40px; }
+    .intro { background:white; border-radius:16px; padding:22px; box-shadow:0 4px 16px #163e2410; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px; }
+    section, .tile { background:white; padding:22px; border-radius:14px; box-shadow:0 4px 16px #163e2410; margin-top:18px; }
+    h2 { color:var(--green); margin-top:0; }
+    h3 { margin-top:0; color:var(--dark); }
+    li { margin:6px 0; }
+    .notice { background:#fff8df; border-left:4px solid #d7a321; padding:12px 14px; border-radius:6px; }
+    footer { background:var(--dark); color:white; text-align:center; padding:22px 16px; }
+    footer p { margin:4px 0; }
+    a { overflow-wrap:anywhere; }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="tag">Student Project Website</span>
+    <h1>IoT Smart Irrigation System</h1>
+    <p>Using smart technology to support efficient water management in agriculture.</p>
+  </header>
+  <nav aria-label="Main navigation">
+    <a href="#introduction">Introduction</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#components">Components</a>
+    <a href="#working">Working</a>
+    <a href="#details">Project Details</a>
+  </nav>
+  <main>
+    <div class="intro" id="introduction">
+      <h2>Introduction</h2>
+      <p>An IoT Smart Irrigation System uses soil-moisture readings and a controller to help decide when plants need water. Depending on the hardware and software implemented, the controller can operate a water pump when the soil becomes dry. The aim is to make irrigation more informed and help avoid unnecessary watering.</p>
+    </div>
+    <div class="grid">
+      <div class="tile" id="objectives">
+        <h3>Project Objectives</h3>
+        <ul>
+          <li>Monitor soil moisture levels.</li>
+          <li>Reduce unnecessary water use.</li>
+          <li>Support timely irrigation decisions.</li>
+          <li>Explore smart and sustainable agriculture.</li>
+        </ul>
+      </div>
+      <div class="tile" id="components">
+        <h3>Possible Hardware</h3>
+        <ul>
+          <li>Soil-moisture sensor</li>
+          <li>Arduino or ESP32 controller</li>
+          <li>Relay module and water pump</li>
+          <li>Power supply and connecting wires</li>
+        </ul>
+      </div>
+      <div class="tile">
+        <h3>Possible Software</h3>
+        <ul>
+          <li>Arduino IDE (if Arduino is used)</li>
+          <li>Controller program</li>
+          <li>Web browser for this project page</li>
+        </ul>
+      </div>
+    </div>
+    <section id="working">
+      <h2>Working Principle</h2>
+      <ol>
+        <li>The soil-moisture sensor reads the moisture level in the soil.</li>
+        <li>The controller receives and processes the sensor reading.</li>
+        <li>If automatic control is implemented, the controller can switch the pump on when the soil is dry.</li>
+        <li>When the required moisture level is reached, the system can switch the pump off according to its configuration.</li>
+      </ol>
+      <p class="notice"><strong>Project note:</strong> The actual components and automatic features depend on the hardware and program used in the submitted project. This page describes the general concept and does not claim that hardware is connected or running online.</p>
+    </section>
+    <section>
+      <h2>Benefits</h2>
+      <ul>
+        <li>Can help improve water-use management.</li>
+        <li>Can reduce the need for continuous manual checking.</li>
+        <li>Provides a practical example of sensors and automation.</li>
+        <li>Introduces the use of IoT concepts in agriculture.</li>
+      </ul>
+    </section>
+    <section id="details">
+      <h2>Project Details</h2>
+      <p><strong>Student Name:</strong> Ram Niraj</p>
+      <p><strong>Seat Number:</strong> 510513059</p>
+      <p><strong>College:</strong> R.P. Institute of Hospitality &amp; Management</p>
+      <p><strong>Course:</strong> B.Sc. Computer Science</p>
+      <p><strong>Project Title:</strong> IoT Smart Irrigation System</p>
+    </section>
+  </main>
+  <footer>
+    <p><strong>IoT Smart Irrigation System</strong></p>
+    <p>Academic student project website</p>
+  </footer>
+</body>
+</html>
